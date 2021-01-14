@@ -1,0 +1,37 @@
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://localhost/nuvu
+    username: postgres
+    password: Dart0
+    driver-class-name: org.postgresql.Driver
+
+jwt:
+  header: Authorization
+  secret: 4Da80e78dcF144ea9143a05e58DA1620
+  expiration: 3600
+
+cloud:
+  aws:
+    credentials.use-default-aws-credentials-chain: true
+    region.use-default-aws-region-chain: true
+    stack.auto: false
+
+#    rds:
+#      development.username: postgres
+#      development.password: FJakt4WqcxF5KlRlosVr
+#      development.databaseName: nuvu
+
+logging:
+  level:
+    com.amazonaws:
+      util.EC2MetadataUtils: error
+      internal.InstanceMetadataServiceResourceFetcher: error
