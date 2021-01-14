@@ -11,7 +11,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost/nuvu
     username: postgres
-    password: Dart0
+    password: password
     driver-class-name: org.postgresql.Driver
 
 jwt:
@@ -24,11 +24,6 @@ cloud:
     credentials.use-default-aws-credentials-chain: true
     region.use-default-aws-region-chain: true
     stack.auto: false
-
-#    rds:
-#      development.username: postgres
-#      development.password: FJakt4WqcxF5KlRlosVr
-#      development.databaseName: nuvu
 
 logging:
   level:
